@@ -30,8 +30,8 @@ class TransferServiceTest {
 
     @Test
     void transferShouldMoveMoney() {
-        Account from = new Account(fromId, "Alice", new BigDecimal("100.00"));
-        Account to = new Account(toId, "Bob", new BigDecimal("50.00"));
+            Account from = new Account(fromId, "Eduardo", new BigDecimal("100.00"));
+        Account to = new Account(toId, "Alice", new BigDecimal("50.00"));
 
         when(repository.findById(fromId)).thenReturn(Optional.of(from));
         when(repository.findById(toId)).thenReturn(Optional.of(to));
